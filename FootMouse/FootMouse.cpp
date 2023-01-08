@@ -244,7 +244,7 @@ int main(int argc, char* argv[])
         }
     
         if (samples>0) {
-            
+            // Would be nice to not hardcode this, but there's no time.
             ProcessAccelerometer_MouseStick(acceleration/(float)samples);
             //ProcessAccelerometer_WASD(acceleration / (float)samples);
         }
