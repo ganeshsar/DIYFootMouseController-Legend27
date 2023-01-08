@@ -211,6 +211,7 @@ int main(int argc, char* argv[])
 
     if (controller == nullptr) {
         SDL_Log("Failed to find a adequate controller.\n");
+
         return 1;
     }
 
@@ -244,8 +245,8 @@ int main(int argc, char* argv[])
     
         if (samples>0) {
             
-            // ProcessAccelerometer_MouseStick(acceleration/(float)samples);
-            ProcessAccelerometer_WASD(acceleration / (float)samples);
+            ProcessAccelerometer_MouseStick(acceleration/(float)samples);
+            //ProcessAccelerometer_WASD(acceleration / (float)samples);
         }
         SDL_Delay(delay);
     }
